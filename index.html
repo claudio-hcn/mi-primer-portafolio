@@ -57,21 +57,27 @@
         aria-controls="home" aria-selected="true">Home</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+      <button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum" type="button" role="tab"
         aria-controls="profile" aria-selected="false">Curriculum</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab"
+      <button class="nav-link" id="portafolio-tab" data-bs-toggle="tab" data-bs-target="#portafolio"" type="button" role="tab"
         aria-controls="contact" aria-selected="false">Portafolio</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contacto-tab" data-bs-toggle="tab" data-bs-target="#contacto" type="button" role="tab"
+        aria-controls="contact" aria-selected="false">Contacto</button>
     </li>
   </ul>
   <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><img class="col-12"
-        src="assets/img/Portafolio/giphy.gif" alt=""></div>
+
+    <!--* HOME RO -->
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <img class="col-12" src="assets/img/Portafolio/giphy.gif" alt=""></div>
 
 
     <!--* CURRICULUM PROFESIONAL -->
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="tab-pane fade" id="curriculum" role="tabpanel" aria-labelledby="curriculum-tab">
       <div class="row mx-2" id="curriculum">
         <div class="col-10 col-md-6 mb-5">
           <h2 class="mb-5 text-danger">Experiencia Laboral</h2>
@@ -136,7 +142,7 @@
     </div>
 
     <!--* PORTAFOLIO -->
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="tab-pane fade" id="portafolio" role="tabpanel" aria-labelledby="portafolio-tab">
       <div class="row row-cols-1 row-cols-md-3 g-4 m-3" id="portafolio">
         <div class="col">
           <div class="card bg-dark text-warning border-success">
@@ -178,8 +184,8 @@
           <div class="card bg-dark text-warning border-success">
             <img src="assets/img/Portafolio/super-polo.gif" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Super Pollo</h5>
-              <p class="card-text">Ya no hay nada que mostrar acá, son algo básico, consisten en actividades realizadas en otros cursos, asi que les dejo un enlace a un capitulo de super pollo</p>
+              <h5 class="card-title text-danger">Super Pollo</h5>
+              <p class="card-text">Ya no hay nada que mostrar acá, mis otros repositorios son algo básico, consisten en actividades realizadas en otros cursos, asi que les dejo un enlace a un capitulo de super pollo</p>
             </div>
             <div class="card-footer">
               <a href="https://www.youtube.com/watch?v=t-jWadJcTT4" class="btn btn-success">Ver Video</a>
@@ -189,9 +195,14 @@
 
       </div>
     </div>
+
+
+    <div class="tab-pane fade" id="contacto" role="tabpanel" aria-labelledby="contacto-tab">
+      <h2 class="text-danger">wena choro</h2>
   </div>
-
-
+  </div>
+  
+ 
 
   <!--* Modal -->
   <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
