@@ -1,0 +1,67 @@
+
+#presentacion{
+    display: none;
+}
+
+.p-principal{
+    text-indent: 20px;
+    text-align: justify;
+    font-size: medium;
+}
+
+.img-cl{
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 200px;
+    border: 3px rgb(255,193,41) solid;
+}
+
+.img-linkedin{
+    width: 30px;
+}
+
+.navbar{
+ background-color: rgb(53, 63, 72)
+}
+
+.icono-footer{
+    width: 30px;
+}
+
+
+.contenedor-carrusel {
+    width: 810px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
+  
+  .carousel-item {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img-carrusel {
+    height: 300px;
+    width: 400px;
+  }
+
+footer{
+background-color:rgb(53, 63, 72 );
+}
+
+.card-img-top{
+height: 300px;
+}
+
+
+.nav-tabs{
+  background-color: rgb(53, 63, 72);
+}
+.nav-link{
+  color: rgb(255,193,41);
+}
+
+.nav-link:hover{
+  color: white ;
+}
