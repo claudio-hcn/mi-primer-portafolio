@@ -28,24 +28,6 @@
     width: 30px;
 }
 
-
-.contenedor-carrusel {
-    width: 810px;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-  }
-  
-  .carousel-item {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .img-carrusel {
-    height: 300px;
-    width: 400px;
-  }
-
 footer{
 background-color:rgb(53, 63, 72 );
 }
