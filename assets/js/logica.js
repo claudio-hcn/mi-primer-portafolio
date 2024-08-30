@@ -88,6 +88,9 @@ function validarRUT(rut) {
   return dv === dvEsperado;
 }
 
-
+ function confirmSubmission() {
+    alert('Formulario enviado.');
+    console.log('Formulario enviado.');
+  }
 
 })
