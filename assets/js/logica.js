@@ -46,7 +46,7 @@ $("#guestBookForm").submit(function(event) {
   var newComment = `
       <div class="comment-box bg-light p-3 rounded shadow-sm mb-3">
           <p><strong>Nombre:</strong> ${name}</p>
-          <p><strong>RUT:</strong> ${rut}</p>
+          <p><strong>R.U.T.:</strong> ${rut}</p>
           <p><strong>Correo:</strong> ${email}</p>
           <p><strong>Comentario:</strong></p>
           <p>${comment}</p>
