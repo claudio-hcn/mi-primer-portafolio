@@ -200,73 +200,46 @@
 
     <!--* FORMULARIO -->
     <div class="tab-pane fade" id="contacto" role="tabpanel" aria-labelledby="contacto-tab">
-      <!-- <form action="" id="formulario">
-        <div class="row">
-          <div class="mb-3 text-danger col">
-            <label for="nombreUsuario" class="form-label">Nombre</label>
-            <input type="" class="form-control" id="nombreUsuario" placeholder="TU NOMBRE" required>
-          </div>
-          <div class="mb-3 text-danger col">
-            <label for="rutUsuario" class="form-label">RUT</label>
-            <input type="" class="form-control" id="rutUsuario" placeholder="ingresa tu RUT ejemplo 12345678-1" required>
+      <h2 class="mt-5 text-danger">Libro de Visitas</h2>
+      <form id="guestBookForm" action="https://formsubmit.co/el/xekiwu" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label text-primary">Nombre:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese su nombre.
           </div>
         </div>
 
-        <div class="mb-3 text-danger">
-          <label for="correoUsuario" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="correoUsuario" placeholder="name@example.com" required>
+        <div class="mb-3">
+          <label for="rut" class="form-label text-primary">RUT:</label>
+          <input type="text" class="form-control" id="rut" name="rut" required>
+          <span id="rutError" class="error"></span>
+          <div class="invalid-feedback">
+            Por favor, ingrese un RUT válido.
+          </div>
         </div>
-        <div class="mb-3 text-danger">
-          <label for="textArea1" class="form-label">Escribe tus comentarios</label>
-          <textarea class="form-control" id="textArea1" rows="3" required></textarea>
-        </div </div>
-        <button class="btn btn-success">enviar</button>
+
+        <div class="mb-3">
+          <label for="email" class="form-label text-primary">Correo:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese un correo electrónico válido.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="comment" class="form-label text-primary">Comentario:</label>
+          <textarea id="comment" name="comment" rows="4" class="form-control" required></textarea>
+          <div class="invalid-feedback">
+            Por favor, ingrese su comentario.
+          </div>
+        </div>
+
+        <button class="btn btn-success">Agregar Comentario</button>
       </form>
 
-      <div class="text-red" id="posteo">
-
-      </div> -->
-      <h2 class="mt-5 text-danger">Libro de Visitas</h2>
-
-<form id="guestBookForm" action="https://formspree.io/f/meojnwpv" method="post" class="needs-validation" novalidate>
-    <div class="mb-3">
-        <label for="name" class="form-label text-primary">Nombre:</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-        <div class="invalid-feedback">
-            Por favor, ingrese su nombre.
-        </div>
-    </div>
-
-    <div class="mb-3">
-        <label for="rut" class="form-label text-primary">RUT:</label>
-        <input type="text" class="form-control" id="rut" name="rut" required>
-        <span id="rutError" class="error"></span>
-        <div class="invalid-feedback">
-            Por favor, ingrese un RUT válido.
-        </div>
-    </div>
-
-    <div class="mb-3">
-        <label for="email" class="form-label text-primary">Correo:</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-        <div class="invalid-feedback">
-            Por favor, ingrese un correo electrónico válido.
-        </div>
-    </div>
-
-    <div class="mb-3">
-        <label for="comment" class="form-label text-primary">Comentario:</label>
-        <textarea id="comment" name="comment" rows="4" class="form-control" required></textarea>
-        <div class="invalid-feedback">
-            Por favor, ingrese su comentario.
-        </div>
-    </div>
-
-    <button type="submit" class="btn btn-success">Agregar Comentario</button>
-</form>
-
-<h3 class="mt-5">Comentarios Recientes</h3>
-<div id="commentsSection"></div>
+      <h3 class="mt-5">Comentarios Recientes</h3>
+      <div id="commentsSection"></div>
     </div>
 
 
