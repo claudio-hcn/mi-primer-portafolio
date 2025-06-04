@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
   nombre = prompt(
     "Hola " +
       nombre +
-      ":\n Estás en mi página web, lamentablemente debo verificar \nque seas un ñoño del bootcamp de talento digital \nde lo contrario serás redireccionado a otra página\n\n DEBES ESCRIBIR EL NOMBRE DE UNA DE LAS PROFES DEL CURSO (SOLO EL NOMBRE)"
+      ":\n Estás en mi página web, lamentablemente debo verificar \nque seas un ñoño del bootcamp de talento digital \nde lo contrario serás redireccionado a otra página\n\n DEBES ESCRIBIR EL NOMBRE DEL PROFE DEL CURSO (SE LLAMA ALONSO)"
   );
-  cosa="un nombre de una de las profes del curso";
+  cosa="nombre del profe del curso";
   nombre=validarNombre(nombre, cosa);
   nombre = nombre.toUpperCase();
   console.log(nombre);
-  if (nombre == "ELENA" || nombre == "IREMAR" || nombre == "ELENA " || nombre == "IREMAR ") {
+  if (nombre == "ALONSO" || nombre == "ALONSO") {
     alert("ahora si, bienvenido a mi sitio");
   } else {
     alert("largo de aquí");
