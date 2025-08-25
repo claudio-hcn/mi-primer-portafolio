@@ -1,29 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var nombre = prompt("Bienvenido a mi página, cuál es tu nombre?");
-  cosa = "tu nombre";
-  nombre=validarNombre(nombre, cosa);
-  nombre = prompt(
-    "Hola " +
-      nombre +
-      ":\n Estás en mi página web, lamentablemente debo verificar \nque seas un estudiante del bootcamp de talento digital \nde lo contrario serás redireccionado a otra página\n\n DEBES ESCRIBIR EL NOMBRE DEL PROFE DEL CURSO (SE LLAMA ALONSO)"
-  );
-  cosa="nombre del profe del curso";
-  nombre=validarNombre(nombre, cosa);
-  nombre = nombre.toUpperCase();
-  console.log(nombre);
-  if (nombre == "ALONSO" || nombre == "ALONSO ") {
-    alert("ahora si, bienvenido a mi sitio");
-  } else {
-    alert("largo de aquí");
-    location.href = "http://www.savewalterwhite.com/";
-  }
-
-  function validarNombre(nombre, cosa) {
-    while (nombre == "" || nombre == null) {
-        nombre = prompt("Por favor, ingresa "+ cosa);
-      }
-      return nombre;
-  }
 
   document.getElementById('guestBookForm').addEventListener('submit', function(event) {
     // Evitar el comportamiento por defecto del formulario
